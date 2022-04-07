@@ -1,0 +1,26 @@
+#hat {
+    max-width: 100px;
+    max-height: 100px;
+}
+#shirt {
+    max-width: 200px;
+    max-height: 200px;
+}
+#pant{
+    max-width: 200px;
+    max-height: 200px;
+}
+#shoes {
+    max-width: 100px;
+    max-height: 100px;
+}
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: darkcyan;
+}

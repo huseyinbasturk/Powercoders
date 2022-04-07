@@ -1,0 +1,31 @@
+header {
+    background-color: aqua;
+    height: 100px;
+    width: auto;
+}
+main {
+    display: flex;
+}
+.rightsidebar {
+    background-color:orangered;
+    height: 50vh;
+    width: auto;
+}
+
+.leftsidebar {
+    background-color:greenyellow;
+    height: 50vh;
+}
+
+.middlebody {
+    background-color: palevioletred;
+    height: 50vh;
+}
+footer {
+    background-color: red;
+    height: 80px;
+    width: auto;
+}
+.col {
+    flex: 1;
+}
