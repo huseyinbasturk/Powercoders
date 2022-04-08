@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body{
+    background-color: blanchedalmond;
+}
+header{
+    height: 30vh;
+    width: auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    width: 100%;
+    background-color: aqua;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
+    box-shadow: 0 0 2rem rgba(97, 0, 255, 0.52);
+
+
+}
+
+nav .logo a{
+    color: brown;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 400;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 5px;
+}
+
+nav ul li a{
+    position: relative;
+    margin: 0 7px;
+    padding: 5px;
+    text-decoration: none;
+    color: blueviolet;
+    font-weight: 200;
+    font-size: 1.2rem;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.col1, .col2{
+    flex: 2;
+    padding: 10px;
+    height: 300px;
+    width: auto;
+}
+
+.col3 {
+    flex: 1;
+    padding: 10px;
+    height: 300px;
+    width: auto;
+    
+}
+
+.col3 ul {
+    list-style-type: none;
+}
+
+.col3 ul li a {
+    text-decoration: none;
+    color: brown;
+}
+
+
+
+.footer {
+    color:black;
+    background-color:aqua;
+    height: 20vh;
+    width: auto;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Ubuntu Mono', monospace;
+  }
+
+  h2 {
+    font-family: 'Raleway', sans-serif;
+  }
+
+ p{
+    font-family: 'PT Serif', serif;
+  }
