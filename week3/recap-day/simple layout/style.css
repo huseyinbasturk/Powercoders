@@ -1,0 +1,52 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 10px;
+}
+*{
+    font-size: 1.9rem;
+}
+body{
+    background-color: lightgray;
+}
+main{
+    background-color: white;
+    margin: 5rem auto;
+    padding: 5rem;
+    width: 80%;
+}
+h1{
+    display: block;
+    font-size: 2rem;
+    margin: 1.5em 0;
+    color: #aaa;
+}
+strong{
+    color: #000;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    grid-template-columns: 1fr;
+}
+li{
+    margin: 3rem;
+}
+img{
+    max-width: 100%;
+}
+p{
+    max-width: 100%;
+}
+button{
+    background: transparent;
+
+}
+@media only screen and (min-width:640px){
+    ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
