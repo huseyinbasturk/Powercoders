@@ -1,0 +1,33 @@
+body {
+    margin:0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    border: 2px solid black;
+    padding: 5px;
+    
+}
+
+.column {
+    background-color:rgb(89,161,175);;
+    color: white;
+    margin: 5px;
+    flex: 22%;
+
+    
+}
+
+@media (max-width: 768px) {
+    .column{
+        flex:30%; 
+       }
+
+}
+
+h1 {
+    margin-left: 10px;
+}
