@@ -1,0 +1,22 @@
+p {
+    display: flex;
+    background-color: lightseagreen;
+    text-align: center;
+    justify-content: center;
+    height: 50px;
+  }
+  .with-seb {
+    display: flex;
+    gap: 10px;
+
+  }
+  
+  #stretch {
+    flex-grow: 1;
+  }
+  
+  #fixed {
+    flex-basis: 200px;
+  }
+  
+  
