@@ -1,0 +1,49 @@
+Read the instructions and add in the line underneath the needed code:
+
+1. Go to the desktop folder
+cd Desktop
+2. Create a new folder called "task4"
+mkdir task4
+3. Go into the new folder
+cd task4
+4. Create a file called "hello.txt" which has as text "Hello, I am [name] and this is the Code Check-In". 
+touch hello.txt
+echo "Hello, I am Huseyin and this is the Code Check-In" > hello.txt
+5. Open the file in Visual Studio Code
+code hello.txt
+6. Create a new directory called "img"
+mkdir img
+7. Create another directory called "files"
+mkdir files
+8. Go in the directory "files"
+cd files
+9. Add an empty file called "1.txt"
+touch 1.txt
+10. Add another file called "2.txt"
+touch 2.txt
+11. Go back to the "task4" folder
+cd ..
+12. Turn that folder into a repository
+git init
+13. Delete the folder "img" 
+rmdir img
+14. Delete the folder "files"
+rm -r files
+15. Move everything to the staging area
+git add .
+16. Then commit
+git commit -m "code check-in"
+17. Create a new folder "pics"
+mkdir pics
+18. Move the existing file to the folder "pics"
+mv hello.txt pics
+19. Check all areas in git
+git status
+20. Commit your current staging area
+git add .
+git commit -m "committing the current"
+21. Print the git history
+git log
+22. Revert everything back to the first commit, the reverted changes should remain in the working area
+q
+git reset --soft HEAD~1

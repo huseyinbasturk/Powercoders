@@ -1,0 +1,39 @@
+First of all, my goal is here to print something repetitive. 
+I want to print numbers from 1-100. For this I just need a loop, which starts at 1 goes up to 100. Loop can execute the following code as much as predefined.
+For each time I need to print the number, and add 1 to that number before going out the loop.(First line of code in parantheses, i defined starting point, condition, and increment statement)
+According to our task I have to need print "Power" instead of multiples of 5, and "Coders" instead of multiples 7 and "Powercoders" instead of multiples of five and seven(5*7). 
+Before printing the numbers i am going to check the numbers if it is a multiple of 5,7 and 35. For that calculation i need to check the remainder after division. It is a simple Math.
+In that particular situations I am going to print the desired strings. Otherwise the program prints the number itself. To check that particular situations i can use if-else statements or switch-case.
+On that lines my program checks the numbers whether they have these conditions or not. 
+
+
+I can build my algorithm in Java, in which i feel comfortable, than i can write it with javascript.
+
+	for (int i=1; i <=100; i++) {
+      if(i%(5*7) == 0) {
+        System.out.println("Powercoders");
+        continue;
+      } else if (i%5 == 0) {
+        System.out.println("Power");
+      } else if (i%7 == 0) {
+        System.out.println("Coders");
+      } else System.out.println(i);
+    }
+	
+now i need to adapt this algorithm to JS. It is almost the same.
+
+	for (let i = 1; i <= 100; i++) {
+		if(i%(5*7)==0) {
+			console.log("Powercoders");
+			continue;
+		} else if (i%5 == 0) {
+			console.log("Power"); 
+		} else if (i%7 == 0) {
+			console.log("Coders");
+		} else console.log(i);
+	}
+
+**But we should be careful about the line that check the number if it is a multiple of (5*7). Because these numbers are still a multiple of 5 and 7. 
+That is why i use "continue" statement. With that statement, it will no longer execute the following line go directly to the next number in the loop and execute from the first line.
+
+there are various ways to do this calculation. i can define variables not to use hardcoded numbers or use switch case instead of if statement or another print methods from javascripts.
