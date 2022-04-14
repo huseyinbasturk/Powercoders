@@ -1,0 +1,85 @@
+m + d : 2 min
+d: 1 min (or m)
+da + s :5 min 
+m: 2 min (or d)
+m + d : 2 min 
+= Total = 12 min
+
+constraints 
+================
+2 people max per route 
+12 min in total ( 1 torch only)  
+specific speed family members: slowest speed counts 
+
+solution 
+===============
+slowest couple should use the tunnel only 1 time 
+slowest need to go together: daughter and son 
+fastest ones for the return route
+
+
+DarknessPhoebia 
+    INITIALIZE maxTime as 12 
+    INITIALIZE totalTime as 0
+    INITIALIZE speedFather as 1
+    INITIALIZE speedMother as 2
+    INITIALIZE speedSon as 4
+    INITIALIZE speedDaughter as 5
+    INITIALIZE maxPeople as 2
+    INITIALIZE peopleOnTheOtherSide as 0 
+    INITIALIZE peopleAtStart as 4
+
+    INITIALIZE slowestCouple 
+    INITIALIZE fastestCouple 
+
+    Step1: check / find out who 2 fastest people are and store their slowest speed in fastest couple 
+    Step2: check / find out who 2 slowest people are and store their slowest speed in slowest couple
+    Step3: fastestCouple go to the other side 
+            totalTime += fastestCouple (0 + 2 = 2) 
+            CHECK totalTime <= maxTime
+            peopleAtStart -= 2(fastestCouple)
+            peopleOnTheOtherSide = 2(father and mother)
+            CHECK peopleOnTheOtherSide = 4
+
+    step4: father( or mother) come back to the starting point with a torch.
+            totalTime += speedFather (2 + 1 = 3)
+            CHECK totalTime <= maxTime
+            peopleAtStart += 1(father)
+            peopleOnTheOtherSide -= 1(father)
+            CHECK peopleOnTheOtherSide = 4
+
+
+    step5: son and daughter go to the other side
+            totalTime += slowestCouple (3 + 5 = 8)
+            CHECK totalTime <= maxTime
+            peopleAtStart -= 2(son and daughter)
+            peopleOnTheOtherSide += 2(son and daughter)
+            CHECK peopleOnTheOtherSide = 4
+
+    
+    step6: mother come back to the starting ppoint with a torch
+            totalTime += speedMother (8 + 2 = 10)
+            CHECK totalTime <= maxTime
+            peopleAtStart += 1(mother)
+            peopleOnTheOtherSide -= 1(mother)
+            CHECK peopleOnTheOtherSide = 4
+    
+    step7: father and mother go to the other side
+            totalTime += fastestCouple (10 + 2 = 12)
+            CHECK totalTime <= maxTime
+            peopleAtStart -= 2(mother and father)
+            peopleOnTheOtherSide += 2(mother and father)
+            CHECK peopleOnTheOtherSide = 4
+
+
+    step8: IF peopleOnTheOtherSide = 4 and totalTime <= maxTime
+
+            PRINT "Great, you found the solution. Well done." 
+            
+            ELSE "Unfortunately, you failed"
+
+    
+
+
+
+END DarknessPhoebia
