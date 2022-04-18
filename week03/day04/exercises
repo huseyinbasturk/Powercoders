@@ -1,0 +1,102 @@
+// Exercise-1 "Say Hello"
+
+    //Constraints
+    Should be string
+    max 20 characters
+
+    //inputs
+    username
+
+    initialize inputs
+    # userName as none
+
+    //process
+    begin
+    # promt "Please input your name!"
+    # check if the number of characters is greater 
+    # than 2 and less than 20.
+    # assign the input as username  
+
+    # Display "Hallo " + username
+
+    END Exercise-1  
+
+    // Exercise-2
+    //Constraints
+    Should be string
+    no space
+    no comma
+    maxCharacter as 50
+    just characters (A-Z) and numbers (0-9)
+    
+    //inputs
+    userInput
+    initialize inputs
+    # userInput as none
+    
+    //process
+    begin
+    # promt "Please input your 
+    #  text just as characters and numbers"
+    # check if the number of characters is less 
+    # than 50.
+    # check if the string contains special characters
+    # or spaces.
+    # if yes promt "Please re-enter your input"
+    # apply checking process again and if input is valid
+    # go to next step, if not go to previous step
+    # assign the input as userInput 
+    # count the number of chracters
+    # assign number of characters as numCharacter
+    # Display userInput + numCharacter
+    
+    END Exercise-2
+
+    // Constraints
+    // Author name should be full name
+    // quoto must be less than 100 chracters
+
+    // Exercises-3
+    // initialize authorName as none
+    // initialize quote as none
+
+    begin
+    # promt "Please enter the Author name"
+    # assign the input as authorName
+    # check if the authorName include space 
+    # promt "Please enter the Quoto"
+    # assign the input as quoto
+
+    # Display authorName + " says, " + quote
+
+// Exercise-4
+//Constraints
+Should be name, verb, adjective and adverb
+maxCharacter as 20
+just characters (A-Z)
+    
+//inputs
+userInput
+initialize inputs
+# userInputNoun as none
+# userInputAdjective as none
+# userInputAdverb as none
+# userInputVerb as none
+
+# SentenceOneNoun : sentenceOnePartOne + missingPart + sentenceOnePartTwo
+# SentenceTwoVerb : sentenceTwoPartOne + missingPart + sentenceTwoPartTwo
+# SentenceThreeAdverb : sentenceThreePartOne + missingPart + sentenceThreePartTwo
+# SentenceFourAdjective : sentenceFourPartOne + missingPart + sentenceFourPartTw0    
+
+//process
+begin
+# promt "Please input your Noun, verb, adverb, SentenceFourAdjective"
+# assign the input as userInputNoun, userInputAdjective, userInputAdverb
+# and userInputVerb.
+
+# Display sentenceOnePartOne + userInputNoun + sentenceOnePartTwo
+# Display sentenceTwoPartOne + userInputVerb + sentenceTwoPartTwo
+# Display sentenceThreePartOne + userInputAdverb + sentenceThreePartTwo
+# Display sentenceFourPartOne + userInputAdjective + sentenceFourPartTwo
+    
+END Exercise-4
