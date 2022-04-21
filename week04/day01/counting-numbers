@@ -1,0 +1,33 @@
+"Counting numbers"
+
+    //Constraints
+    Should be string
+    
+
+    //inputs
+    userInput
+
+    initialize inputs
+    # UserInput as none
+    # numberOfCharacter as 0
+
+
+    //process
+    begin
+    # promt "Please type your input"
+    # assign the input to the variable "userInput"
+    # count the characters of the userInput and assign it to variable "numberOfCharacter"
+
+    # Display userInput + numberOfCharacter
+
+    END Exercise 
+
+   let userInput;
+    do {
+        userInput =  prompt("Type your input here:");
+    
+    }while(!(isNaN(userInput)));
+
+
+    let numberOfCharacter = userInput.length;
+    console.log(userInput + " has " + numberOfCharacter + " characters.")

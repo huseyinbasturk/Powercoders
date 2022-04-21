@@ -1,0 +1,29 @@
+// Exercise-1 "Say Hello"
+
+    //Constraints
+    Should be string
+    max 20 characters
+
+    //inputs
+    username
+
+    initialize inputs
+    # userName as none
+
+    //process
+    begin
+    # promt "Please input your name!"
+    # check if the number of characters is greater 
+    # than 2 and less than 20.
+    # assign the input as username  
+
+    # Display "Hallo " + username
+
+    END Exercise-1  
+
+    let name = prompt("Please enter your name: ");
+    if( name.length >=2 && name.length <=20) {
+        console.log("Hallo " + name);
+    }
+
+    

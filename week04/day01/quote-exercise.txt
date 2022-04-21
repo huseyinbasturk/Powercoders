@@ -1,0 +1,36 @@
+    // Constraints
+    Author name should be full name
+    quote must be less than 100 chracters
+
+    
+    // initialize authorName as none
+    // initialize quote as none
+
+    begin
+    # promt "Please enter the Author name"
+    # assign the input as authorName
+    # check if the authorName include space 
+    # promt "Please enter the Quote"
+    # assign the input as quoto
+
+    # Display authorName + " says, " + quote
+
+let authorName;
+let quote;
+do {
+    authorName= prompt("Please enter the author name:");
+    isFullName = authorName.includes(" ");
+    if(!isFullName) {
+        alert("Please type a fullName!")
+    }
+}while(!isFullName);
+
+do {
+    quote = prompt("Please enter the quote:");
+    numberOfChar = quote.length;
+    if(numberOfChar > 200) {
+        alert("Please enter maximum 200 characters")
+    }
+} while(numberOfChar> 200);
+
+console.log(authorName + " says, " + quote);

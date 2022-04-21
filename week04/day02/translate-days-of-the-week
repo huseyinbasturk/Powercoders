@@ -1,0 +1,35 @@
+
+let day ="";
+function translateDay(day) {
+
+switch(day) {
+    case "Monday":
+        day = "Montag";
+    break;
+    case "Tuesday":
+        day = "Dienstag";
+    break;
+    case "Wednesday":
+        day = "Mittwoch";
+    break;
+    case "Thursday":
+        day = "Donnerstag";
+    break;
+    case "Friday":
+        day = "Freitag";
+    break;
+    case "Saturday":
+        day = "Samstag";
+    break;
+    case "Sunday":
+        day = "Sonntag";
+    break;
+    default:
+        day ="-Invalid day in English-";
+}
+    return day;
+}
+console.log("Heute ist " + translateDay("Thursday"));
+console.log("Morgen ist " + translateDay("Friday"));
+console.log("Gestern ist " + translateDay("Mercredi"))
+
