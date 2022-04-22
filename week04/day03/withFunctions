@@ -1,0 +1,46 @@
+function greeting(){
+    let name = prompt("Please enter your name: ");
+    if( name.length >=2 && name.length <=20) {
+        console.log("Hallo " + name);
+    }
+}
+
+greeting();
+
+var count= function (){
+    let userInput;
+    do {
+        userInput =  prompt("Type your input here:");
+    
+    }while(!(isNaN(userInput)));
+
+
+    let numberOfCharacter = userInput.length;
+    console.log(userInput + " has " + numberOfCharacter + " characters.");
+}
+
+count();
+
+var printQuote = function() {
+let authorName;
+let quote;
+do {
+    authorName= prompt("Please enter the author name:");
+    isFullName = authorName.includes(" ");
+    if(!isFullName) {
+        alert("Please type a fullName!")
+    }
+}while(!isFullName);
+
+do {
+    quote = prompt("Please enter the quote:");
+    numberOfChar = quote.length;
+    if(numberOfChar > 200) {
+        alert("Please enter maximum 200 characters")
+    }
+} while(numberOfChar> 200);
+
+console.log(authorName + " says, " + quote);
+}
+
+printQuote();
