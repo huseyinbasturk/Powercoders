@@ -31,3 +31,20 @@ console.log(list2);
 // }
 
 // console.log(smallest_value);
+
+/*
+let numberList = [60, 35, 84, 25, -5, 8, -3, 98796, -5];
+var min = numberList [0]
+var max = numberList [0];
+
+for (var i = 0; i < numberList.length; i++) {
+
+    if (max < numberList[i])
+        max = numberList[i];
+
+    if (min > numberList[i])
+        min = numberList[i];
+};
+
+console.log(min);
+*/
