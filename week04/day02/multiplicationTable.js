@@ -16,3 +16,9 @@ for(let number = 0; number < 10; number++) {
 function multiply(number) {
     console.log(number + " * 9 = " + (number*9));
 }
+
+/*
+    for(let i = 0; i <= 10; i++) {
+        console.log(`${i} * 9 = ${i*9}`);
+    }
+*/
