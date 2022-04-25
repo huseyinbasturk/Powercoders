@@ -61,5 +61,6 @@ function changeNumberValue(month) {
 }
 
 ageCalculator(1989,"January");
+ageCalculator(1995, "May");
 
 console.log(`I will be ${age} in ${futureYear}`);
