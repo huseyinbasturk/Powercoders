@@ -20,8 +20,14 @@ function filmCreator(name, year, star, director){
     this.star = star;
     this.director = director
 }
+let filmArray = [];
 let film1 = new filmCreator('Troy',2004, 'Brad Pitt', 'Wolfgang Petersen');
-console.log(film1);
+//console.log(film1);
+let film2 = new filmCreator('The Godfather',1972, 'Marlon Brando', 'Francis Ford Coppola');
+//console.log(film1);
+filmArray.push(film1);
+filmArray.push(film2);
+console.log(filmArray);
 
 function singerCreator(name, origin, age, numberOfAlbums){
     this.name = name;
@@ -32,9 +38,13 @@ function singerCreator(name, origin, age, numberOfAlbums){
         console.log(`My favourite singer is ${this.name} from ${this.origin} . He is ${this.age} years old and so far has ${this.numberOfAlbums}.`);
     }
 }
-
+let singerArray = [];
 let singer1 = new singerCreator('Tarkan', 'Turkey',50, 10);
-singer1.printSinger();
+//singer1.printSinger();
+let singer2 = new singerCreator('Shakira', 'Colombia', 45, 8);
+singerArray.push(singer1);
+singerArray.push(singer2);
+console.log(singerArray);
 console.log("=================================================")
 
 
