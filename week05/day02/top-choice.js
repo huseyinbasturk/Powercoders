@@ -40,7 +40,7 @@ function singerCreator(name, origin, age, numberOfAlbums){
 }
 let singerArray = [];
 let singer1 = new singerCreator('Tarkan', 'Turkey',50, 10);
-//singer1.printSinger();
+singer1.printSinger();
 let singer2 = new singerCreator('Shakira', 'Colombia', 45, 8);
 singerArray.push(singer1);
 singerArray.push(singer2);
@@ -48,7 +48,7 @@ console.log(singerArray);
 console.log("=================================================")
 
 
-
+/*
 
 
 const array = ['id','name','age'];
@@ -74,4 +74,23 @@ console.log(
       'id',
     ),
   );
+*/
 
+// with Mustafa
+function allChoices() {
+  let topChoices = {
+      Team: "Galatasaray FC",
+      Color: "Blue",
+      Number: 8,
+      Day: "Saturday",
+      Sport: "Football",
+      Film: "Inception",
+  };
+
+  for (let i = 0; i < 6; i++) {
+      console.log("My " + (i + 1) + ". choice:  My Favorite " + Object.keys(topChoices)[i] + " is " + topChoices[Object.keys(topChoices)[i]]);
+      
+  }
+}
+
+allChoices();
