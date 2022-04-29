@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width:20px;
+            height: 20px;
+        }
+        .green{
+            color:green;
+        }
+        .red {
+            color:red;
+        }
+    </style>
+</head>
+<body>
+
+
+    <h1>My Book List</h1>
+    
+
+
+    <script>
+    var books = [
+  {
+    title: 'The Design of EveryDay Things',
+    author: 'Don Norman',
+    alreadyRead: false
+  }, {
+    title: 'The Most Human Human',
+    author: 'Brian Christian',
+    alreadyRead: true
+  }
+];
+/*
+  
+  for(let i =0; i < books.length; i++) {
+    const node = document.createElement('p');
+    const textNode = document.createTextNode(`${books[i].title} -- ${books[i].author}`);
+    node.appendChild(textNode);
+    document.querySelector('body').appendChild(node);
+
+    
+  }*/
+    books[0].sourceImg = "./theDesign.jpg";
+    books[0].url = "https://www.flipkart.com/design-everyday-things/p/itmetgtek6thfccb";
+    books[1].sourceImg = "./theMostHuman.jpg";
+    books[1].url = "https://www.goodreads.com/book/show/8884400-the-most-human-human";
+    let header = document.querySelector("h1");
+    let body = document.querySelector("body");
+    body.innerHTML += "<ul>";
+    for (let i = 0; i < books.length; i++) {
+        body.innerHTML += `<li class=${books[i].alreadyRead ? "green" : "red"}> ${books[i].title}-- ${books[i].author}<a href=${books[i].url} target="_blank"><img src=${books[i].sourceImg} alt=""></img></a> </li>`;
+        
+    }
+    body.innerHTML += "</ul>";
+
+    let listElements = document.querySelectorAll('li');
+    
+    listElements.forEach(item=>item.classList.add)
+    
+    </script>
+</body>
+</html>

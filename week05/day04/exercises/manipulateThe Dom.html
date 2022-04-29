@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Powercoders</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque necessitatibus blanditiis quam,
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda cupiditate aspernatur volup
+    </p>
+    <a href = "https://powercoders.org/">Join us</a>
+    <script>
+        let header = document.querySelector('h1');
+        let paragraph = document.querySelector('p');
+        let link = document.querySelector('a');
+
+        for(let i = 0; i < 2; i++) {
+            header.innerHTML += ` ${i+1}`;
+        }
+        console.log(header);
+
+        let text = paragraph.innerText;
+        paragraph.innerHTML = '';
+        for(let i = 0; i < 4; i++) {
+            paragraph.innerHTML += ` <br> ${i+1} ${text}`; ;
+        }
+        console.log(header);
+       link.innerHTML = '';
+        //let a = '';
+        for(let i = 0; i < 7; i++) {
+            
+            //link.innerHTML = `${a} ${i+1}`;
+            link.innerHTML +=`${i+1}`
+            //a = link.innerHTML
+            console.log(link);
+        }
+       
+    </script>
+    </body>
+</html>
