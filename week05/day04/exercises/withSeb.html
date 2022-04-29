@@ -1,0 +1,80 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+​
+        body {
+            max-width: 600px;
+            margin: auto;
+        }
+​
+        #comments p {
+            border: solid 1px grey;
+            background-color: mintcream ;
+            padding: 20px;
+        }
+    </style>
+​
+</head>
+<body>
+​
+    <p id="urlDisplay">url</p>
+​
+    <h2>Click me</h2>
+​
+    <section id="comments">
+        <p>Lorem ipsum dolor sit amet "consectetur" adipisicing elit. Consequatur blanditiis eos beatae asperiores. At earum consequuntur tempora, animi quis libero labore debitis numquam mollitia omnis explicabo quia iure iusto ad! Consequatur blanditiis eos beatae asperiores. Lorem ipsum dolor sit amet "consectetur" adipisicing elit. Consequatur blanditiis eos beatae asperiores. At earum consequuntur tempora, animi quis libero labore debitis numquam mollitia omnis explicabo quia iure iusto ad!</p>
+        <p>Tempora, animi quis libero labore debitis numquam mollitia omnis explicabo quia iure iusto ad!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur blanditiis eos beatae asperiores. At earum consequuntur tempora, animi quis libero labore debitis numquam mollitia omnis explicabo quia iure iusto ad! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci facere dolore qui consequuntur eligendi, quo libero sit, minima impedit consequatur at error! Soluta sit officia corporis, ab quas eum impedit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit ipsum alias sed, a ad repellat, dignissimos iure deserunt et eaque tempore voluptatum explicabo nostrum corporis dolorum ea aperiam! Maxime, temporibus?</p>
+        <p>Lorem ipsum dolor sit amet "consectetur" adipisicing elit. Consequatur blanditiis eos beatae asperiores. At earum consequuntur tempora, animi quis libero labore debitis numquam mollitia omnis explicabo quia iure iusto ad! Lorem ipsum dolor sit amet "consectetur" adipisicing elit. Consequatur blanditiis eos beatae asperiores. At earum consequuntur tempora, animi quis libero labore debitis numquam mollitia omnis explicabo quia iure iusto ad! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur blanditiis eos beatae asperiores. At earum consequuntur tempora, animi quis libero labore debitis numquam mollitia omnis explicabo quia iure iusto ad!</p>
+        <p>Lorem ipsum dolor sit amet "consectetur" adipisicing elit. Consequatur blanditiis eos beatae asperiores. At earum consequuntur tempora, animi quis libero labore debitis numquam mollitia omnis explicabo quia iure iusto ad! Lorem ipsum dolor sit amet "consectetur" adipisicing elit. Consequatur blanditiis eos beatae asperiores. At earum consequuntur tempora, animi quis libero labore debitis numquam mollitia omnis explicabo quia iure iusto ad! Lorem ipsum dolor sit amet "consectetur" adipisicing elit. Consequatur blanditiis eos beatae asperiores. At earum consequuntur tempora, animi quis libero labore debitis numquam mollitia omnis explicabo quia iure iusto ad! Lorem ipsum dolor sit amet "consectetur" adipisicing elit. Consequatur blanditiis eos beatae asperiores. At earum consequuntur tempora, animi quis libero labore debitis numquam mollitia omnis explicabo quia iure iusto ad! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur blanditiis eos beatae asperiores. At earum consequuntur tempora, animi quis libero labore debitis numquam mollitia omnis explicabo quia iure iusto ad! Hey!</p>
+    </section>
+​
+<script>
+​
+let commentElements = document.querySelectorAll("#comments p");
+let comments = Array();
+​
+for (let i = 0; i < commentElements.length; i++) {
+    let comment = commentElements[i];
+    if (comment.innerText.length > 150) {
+        let text = comment.innerText;
+        comments[i] = text;
+        let shortText = text.substring(0, 150);
+        comment.innerHTML = shortText + "...<br><button onclick=\"onReadMoreButtonClicked(" + i + ")\">read more</button>";
+    }
+}
+​
+function onReadMoreButtonClicked(commentIndex) {
+    let commentElement = commentElements[commentIndex];
+    commentElement.innerText = comments[commentIndex];
+}
+​
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
