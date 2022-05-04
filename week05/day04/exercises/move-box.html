@@ -1,0 +1,47 @@
+<!-- Moovvee Booxx
+Make a container with a box inside.
+Make the box move with your scroll wheel.
+Find out more about the scroll wheel event. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background-color: red;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div onmousewheel="moveBox(event)"></div>
+
+    <script>
+        const box = document.querySelector("div")
+        let count = 20
+
+        function moveBox(event) {
+          
+            let valueY = event.deltaY
+
+            if (valueY < 0) {
+                count += 20
+                box.style.marginTop = "" + count + "px"
+            } else {
+                count -= 20
+                box.style.marginTop = "" + count + "px"
+            }
+
+        }
+    </script>
+</body>
+
+</html>
