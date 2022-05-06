@@ -30,10 +30,12 @@ steps -
         not in yet - user input how to order
     */
 
-const todo = document.querySelector('input');
+const todo = document.querySelector("input[type='Text']");
 const addButton = document.querySelector('button');
 const list = document.querySelector('ol');
 
+
+//listItem.forEach
 let todos = [];
 
 //check for duplicates
@@ -52,18 +54,31 @@ let addToDo = () => {
         //create instance
         //push to todos list
         todos.push(new Todo(newItem,todos.length));
+        clearList();
+        displayList(todos);
     } else {
         //returns error message
     }
-
     
 }
 
+let clearList = () => {
+    list.textContent = '';
+}
 let displayList = todos => {
+    clearList();
     //loop through to do list
     //for each object in the list, we render HTML li-tag
     //each li tag will be appended to do ol-DOM element 'list'
+    //add evenTListener for checkbox to call changestatus
+    //const listItem = document.querySelectorAll("input[type='checkBox']");
+}
 
+//
+let changeStatus = () => {
+    //check input -checkbox- if it is checked
+    //find a corresponding object and set isDone to true
+    //if it is not checked set isDone is to false
 }
 addButton.addEventListener('click', addToDo);
 
